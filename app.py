@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 
 import pickle
-#import model
+import model
 
 import statistics
 
@@ -18,8 +18,8 @@ def predict():
     if request.method == 'POST':
         article = request.form['news']
 
-        #cat=model.news_classification(article)
-        cat='yes showing result'
+        cat=model.news_classification(article)
+        #cat='yes showing result'
         return render_template('index.html', news=cat)
 
 
