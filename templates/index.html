@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>News Classification</title>
+  </head>
+  <body>
+    <h1>Enter the news article:</h1>
+    <form class="article" action="/predict" method="POST">
+      <input type="text" name="news" placeholder="news">
+      <input type="submit">
+
+    <h1>{{ news }}</h1>
+    </form>
+  </body>
+</html>
